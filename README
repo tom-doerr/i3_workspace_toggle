@@ -2,19 +2,43 @@
 This script toggles a workspace.
 In contrast to the standard i3 toggle behaviour, this script will restore your active displays.
 
-## Example
+
+# Example
 In this example the setup consists of 3 monitors with workspaces 1 to 3 active.
 
-### Normal Behaviour:
+## Normal behaviour:
 
-       (active)
-          |
-          V
-| 1 | 2 | 3 |
+|  1  |  2  |  3  |
+            (active)
 
 |  $mod + 4 
 V
 
+|  4  |  2  |  3  |
+(active)
+
+|  $mod + 3 
+V
+
+|  4  |  2  |  3  |
+            (active)
+
+## Behaviour with this script
+
+|  1  |  2  |  3  |
+            (active)
+
+|  $mod + 4 
+V
+
+|  4  |  2  |  3  |
+(active)
+
+|  $mod + 3 
+V
+
+|  1  |  2  |  3  |
+            (active)
 
 
 
