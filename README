@@ -8,39 +8,39 @@ In this example the setup consists of 3 monitors with workspaces 1 to 3 active.
 
 ## Normal behaviour:
 
-|  1  |  2  |  3  |
-            (active)
-
-|  $mod + 4 
-V
-
-|  4  |  2  |  3  |
-(active)
-
-|  $mod + 3 
-V
-
-|  4  |  2  |  3  |
-            (active)
-
-## Behaviour with this script
-
-|  1  |  2  |  3  |
-            (active)
-
-|  $mod + 4 
-V
-
-|  4  |  2  |  3  |
-(active)
-
-|  $mod + 3 
-V
-
-|  1  |  2  |  3  |
-            (active)
-
-
+                   |  1  |  2  |  3  |
+                               (active)
+                   
+                   |  $mod + 4 
+                   V
+                   
+                   |  4  |  2  |  3  |
+                   (active)
+                   
+                   |  $mod + 3 
+                   V
+                   
+                   |  4  |  2  |  3  |
+                               (active)
+                   
+                   ## Behaviour with this script
+                   
+                   |  1  |  2  |  3  |
+                               (active)
+                   
+                   |  $mod + 4 
+                   V
+                   
+                   |  4  |  2  |  3  |
+                   (active)
+                   
+                   |  $mod + 3 
+                   V
+                   
+                   |  1  |  2  |  3  |
+                               (active)
+                   
+                   
 
 # Installation
 Copy the script to a directory in your path, for example `~/.local/bin`.
