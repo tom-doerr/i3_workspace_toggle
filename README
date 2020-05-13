@@ -1,6 +1,6 @@
 # What is it?
 This script toggles a workspace.
-In contrast to the standard i3 toggle behaviour, this script will restore your active displays.
+In contrast to the standard i3 toggle behaviour, this script will restore your active workspaces.
 
 
 # Example
