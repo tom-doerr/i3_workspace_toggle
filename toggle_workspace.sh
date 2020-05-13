@@ -1,5 +1,6 @@
 #/bin/bash
 
+workspace_to_toggle=$1
 TMP_FILE_LOCATION_VISIBLE=/tmp/i3_visible_tmp
 TMP_FILE_LOCATION_FOCUSED=/tmp/i3_focused_tmp
 get_i3_workspace_id() {
@@ -15,7 +16,7 @@ save_active_workspace() {
         get_i3_workspace_id focused > $TMP_FILE_LOCATION_FOCUSED
 }
 
-if [[ $(get_i3_workspace_id focused) == "9" ]]
+if [[ $(get_i3_workspace_id focused) == "$workspace_to_toggle" ]]
 then
         currently_visible_workspaces=$(get_i3_workspace_id visible)
         intermediate_workspace=$(grep -v "$currently_visible_workspaces" $TMP_FILE_LOCATION_VISIBLE)
@@ -27,5 +28,5 @@ then
 else
         save_visible_workspaces
         save_active_workspace
-        i3-msg workspace 9
+        i3-msg workspace $workspace_to_toggle
 fi
