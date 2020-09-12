@@ -2,6 +2,9 @@
 This script toggles a workspace.
 In contrast to the standard i3 toggle behaviour, this script will restore your active workspaces.
 
+# Why is this useful?
+Imagine you are working on monitor 1 and want to quickly check another workspace on monitor 2. You would have to navigate to monitor 2 and select the workspace. After you finished you would need to select the original workspace and navigate back to monitor 1. 
+The script switches monitors, selects the demanded workspace and then does this in reverse after being executed a second time, saving you half of the keyboard inputs that would otherwise be necessary.
 
 # Example
 In this example the setup consists of 3 monitors with workspaces 1 to 3 active.
