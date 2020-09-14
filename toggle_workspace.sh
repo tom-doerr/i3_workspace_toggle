@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 
 workspace_to_toggle=$1
 TMP_FILE_LOCATION_VISIBLE=/tmp/i3_visible_tmp
