@@ -16,6 +16,14 @@ save_active_workspace() {
         get_i3_workspace_id focused > $TMP_FILE_LOCATION_FOCUSED
 }
 
+if [[ ! -f $TMP_FILE_LOCATION_VISIBLE ]] || [[ ! -f $TMP_FILE_LOCATION_FOCUSED ]]
+then
+    for f in $TMP_FILE_LOCATION_VISIBLE $TMP_FILE_LOCATION_FOCUSED
+    do
+        get_i3_workspace_id focused > $f
+    done
+fi
+
 if [[ $(get_i3_workspace_id focused) == "$workspace_to_toggle" ]]
 then
         currently_visible_workspaces=$(get_i3_workspace_id visible)
